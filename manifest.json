@@ -1,16 +1,18 @@
 { 
 "name": "Trigger Fixer", 
 "description": "Never feel uncomfortable again!", 
-"version": "1.0", 
+"version": "0.0.0.1", 
 "manifest_version": 3,
- "permissions": ["storage", "activeTab", "scripting"],
+ "permissions": ["storage"],
  "icons": { "16": "TFIcon16.png",
            "48": "TFIcon48.png",
           "128": "TFIcon128.png" },
  "action": {
     "default_popup": "popup.html"
   },
-"options_page": "options.html",
+"options_ui": {
+  "page": "options.html"
+},
   "content_scripts":
   [
   {

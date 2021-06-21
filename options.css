@@ -1,0 +1,32 @@
+body {
+  background-color: #000000;
+  color: #FFFFFF;
+  font-family: 'Comic Sans MS', 'Chalkboard SE', 'Comic Neue', sans-serif;
+  font-size: 17px;
+}
+
+form {
+	font-size: 20px;
+}
+
+
+
+input[type=submit] {
+  border: none;
+  background-color: #763232;
+  color: #FFFFFF;
+  text-align: center;
+  display: inline-block;
+  font-size: 25px;
+  font-family: 'Comic Sans MS', 'Chalkboard SE', 'Comic Neue', sans-serif;
+}
+
+button {
+  border: none;
+  background-color: #763232;
+  color: #FFFFFF;
+  text-align: center;
+  display: inline-block;
+  font-size: 25px;
+  font-family: 'Comic Sans MS', 'Chalkboard SE', 'Comic Neue', sans-serif;
+}
