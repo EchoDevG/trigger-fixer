@@ -1,27 +1,50 @@
 <!DOCTYPE html>
 <html>
-<body>
-<form>
+	<head>
+		<title>Trigger Fixer Options</title>
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<link rel="stylesheet" href="options.css">
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+		<link rel="apple-touch-icon" sizes="180x180" href="apple-touch-icon.png">
+		<link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png">
+		<link rel="icon" type="image/png" sizes="16x16" href="favicon-16x16.png">
+		<link rel="manifest" href="site.webmanifest">
+		<link rel="icon" href="favicon.ico">
+	</head>
+	<body>
+		<div id="wrapper">
+			<div id="content">
+				<div id="center">
+					<h1>Trigger Fixer</h1>
+					<h3>A fix for all your triggers</h3>
+					<div id="border">
+						<div id=help class="tooltip">
+							<i class="fa fa-question-circle" style="font-size:24px;color:#763232"></i>
+							<span class="tooltiptext">Input your triggering word in the first box, then add the<br>word you want to replace your triggering word with in<br>the second box</span>
+						</div>
+						<br><br>
+						<form>
 
-  <label for="replaceThis">triggering word:</label><br>
-  <input type="text" id="replaceThis" name="" value=""><br>
-  
-  <label for="replaceWith">replace with:</label><br>
-  <input type="text" id="replaceWith" name="replaceWith" value=""><br><br><br><br><br>
-  
- 
-  
-  <input type="submit" value="Submit" id="submit">
-  
-  <script src="options.js"></script>
+						  <label for="replaceThis">Triggering word:</label><br>
+						  <input type="text" id="replaceThis" name="" value=""><br>
+						  
+						  <label for="replaceWith">Replace with:</label><br>
+						  <input type="text" id="replaceWith" name="replaceWith" value=""><br><br><br><br><br>
+						  
+						 
+						  
+						  <input type="submit" value="Submit" id="submit" class="button button1">
+						  
+						  <script src="options.js"></script>
 
-</form>
+						</form>
 
-<div id="div1">
-<p id="p1">Trigger list:</p>
-
-</div>
-
-
-</body>
+						<div id="div1">
+							<p id="p1">Trigger list:</p>
+						</div><br>
+					</div>
+				</div>
+			</div>
+		</div>
+	</body>
 </html>

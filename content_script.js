@@ -51,7 +51,7 @@ chrome.storage.sync.get([
     function replaceWords(replaceThisText, ReplaceWithText) {
 
         //create the regex
-        re = new RegExp(`\\b${replaceThisText}\\b`, 'i');
+        re = new RegExp(`\\b${replaceThisText}\\b`, 'gi');
 
         //if there is something to check
         if (replaceThisText !== "") {

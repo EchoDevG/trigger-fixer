@@ -46,24 +46,33 @@ chrome.storage.sync.get([
         let thisWord = document.createElement('span');
         thisWord.setAttribute("id", "replaceThisWord" + i);
         thisWord = replaceThisArr[i];
+		
+		//display filler
+		let fillerPhrase = document.createElement('span');
+        fillerPhrase.setAttribute("id", "fillerPhrase" + i);
+        fillerPhrase = "is replaced by";
 
         //display replaceWithWord value
         let withWord = document.createElement('span');
         withWord.setAttribute("id", "replaceWithWord" + i);
         withWord = replaceWithArr[i];
 
-
+		
+		
         //line breaks go brrrrrrrrrrr
         body.append(thisWord);
         body.append(document.createElement("br"));
+		body.append(fillerPhrase);
+        body.append(document.createElement("br"));
         body.append(withWord);
         body.append(document.createElement("br"));
+		
 
 
         //add button
         let removeButton = document.createElement("button");
         removeButton.setAttribute("id", "removeButton" + i);
-        removeButton.innerHTML = 'Button ' + i;
+        removeButton.innerHTML = 'Remove';
         body.appendChild(removeButton);
         var withID = "replaceWithWord" + i;
 
