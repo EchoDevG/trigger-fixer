@@ -4,14 +4,15 @@
 "version": "0.0.0.1", 
 "manifest_version": 3,
  "permissions": ["storage"],
- "icons": { "16": "TFIcon16.png",
-           "48": "TFIcon48.png",
-          "128": "TFIcon128.png" },
+ "icons": { "16": "images/TFIcon16.png",
+           "48": "images/TFIcon48.png",
+          "128": "images/TFIcon128.png" },
  "action": {
     "default_popup": "popup.html"
   },
 "options_ui": {
-  "page": "options.html"
+  "page": "options.html",
+  "open_in_tab": true
 },
   "content_scripts":
   [
