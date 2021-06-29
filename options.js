@@ -37,11 +37,14 @@ chrome.storage.sync.get([
     //put comma delimited values into an array
     var replaceThisArr = replaceThisCommaDel.split(',');
     var replaceWithArr = replaceWithCommaDel.split(',');
+	
+	//adds the special div element to a variable
+	var div = document.getElementById('div1');
 
 
     //display all the resulty things
     for (i = 1; i < replaceThisArr.length - 1; i++) {
-
+		
         //display replaceThisWord value
         let thisWord = document.createElement('span');
         thisWord.setAttribute("id", "replaceThisWord" + i);
@@ -60,20 +63,17 @@ chrome.storage.sync.get([
 		
 		
         //line breaks go brrrrrrrrrrr
-        body.append(thisWord);
-        body.append(document.createElement("br"));
-		body.append(fillerPhrase);
-        body.append(document.createElement("br"));
-        body.append(withWord);
-        body.append(document.createElement("br"));
+        div.append(thisWord + " " + fillerPhrase + " " + withWord);
+        div.append(document.createElement("br"));
 		
 
 
         //add button
         let removeButton = document.createElement("button");
         removeButton.setAttribute("id", "removeButton" + i);
+		removeButton.setAttribute("class", "buttona button2");
         removeButton.innerHTML = 'Remove';
-        body.appendChild(removeButton);
+        div.appendChild(removeButton);
         var withID = "replaceWithWord" + i;
 
 
