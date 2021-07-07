@@ -31,8 +31,8 @@
 						  <label for="replaceWith">Replace with:</label><br>
 						  <input type="text" id="replaceWith" name="replaceWith" value=""><br>
 						  
-						  <label for="refreshMs">Refresh speed (ms):</label><br>
-						  <input type="text" id="refreshMs" name="refreshMs" value="500"><br><br><br>
+						  <!--<label for="refreshMs">Refresh speed (ms):</label><br>-->
+						  <!--<input type="text" id="refreshMs" name="refreshMs" value="500"><br><br><br>-->
 						  
 						  <input type="submit" value="Submit" id="submit" class="button button1">
 						  
@@ -40,10 +40,18 @@
 
 						</form>
 
+						
+
 						<p id="p1">Trigger list:</p>
 						<div id="div1">
 							
-						</div><br>
+						</div>
+						
+						<div class="slidecontainer">
+						  <input type="range" id="myRange" min="500" max="5000" value="50" class="slider">
+						  <p>Refresh Rate: <span id="demo"></span>ms</p>
+						</div>
+						<script src="slider.js"></script>
 					</div>
 				</div>
 			</div>

@@ -4,8 +4,6 @@
 var replaceThisCommaDel = ",";
 var replaceWithCommaDel = ",";
 
-//time variable
-var refreshrate = document.getElementById("refreshMs").value;
 
 //setting body as the body element
 var body = document.getElementsByTagName("body")[0];
@@ -19,7 +17,6 @@ var replaceWithArr;
 chrome.storage.sync.get([
     'replaceThis',
     'replaceWith',
-	'refreshMs'
 ], function(result) {
 
     //declare submit event listener
@@ -175,11 +172,9 @@ chrome.storage.sync.get([
         chrome.storage.sync.set({
             'replaceWith': replaceWithCommaDel
         });
-		chrome.storage.sync.set({
-            'refreshMs': refreshrate
-        });
 
 
 
     }
 });
+

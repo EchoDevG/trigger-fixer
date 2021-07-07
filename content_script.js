@@ -1,6 +1,6 @@
 //declaration time
 var time;
-var refreshRate
+var refreshRate;
 
 //declare everything on the page as elements
 var elements = document.getElementsByTagName('*');
@@ -94,3 +94,4 @@ chrome.storage.sync.get([
 	//runs on load and runs after loading
 	timer();
 });
+
