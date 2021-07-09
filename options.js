@@ -4,6 +4,7 @@
 var replaceThisCommaDel = ",";
 var replaceWithCommaDel = ",";
 
+
 //setting body as the body element
 var body = document.getElementsByTagName("body")[0];
 
@@ -15,7 +16,7 @@ var replaceWithArr;
 //big function, everything goes in here because chrome storage get is asynchronous, so it has to be like this
 chrome.storage.sync.get([
     'replaceThis',
-    'replaceWith'
+    'replaceWith',
 ], function(result) {
 
     //declare submit event listener
@@ -27,6 +28,9 @@ chrome.storage.sync.get([
     };
     if (result.replaceWith !== undefined) {
         replaceWithCommaDel = replaceWithCommaDel + String(result.replaceWith)
+    };
+	if (result.replaceWith !== undefined) {
+        refreshrate = result.replaceWith
     };
 
     //remove the first character (comma)
@@ -75,6 +79,8 @@ chrome.storage.sync.get([
         removeButton.innerHTML = 'Remove';
         div.appendChild(removeButton);
         var withID = "replaceWithWord" + i;
+		div.append(document.createElement("br"));
+		div.append(document.createElement("br"));
 
 
         //button click listener function
@@ -171,3 +177,4 @@ chrome.storage.sync.get([
 
     }
 });
+
