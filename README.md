@@ -1,4 +1,4 @@
-#This project has been migrated to gitlab and this is a legacy version
+# This project has been migrated to gitlab and this is a legacy version
 find it here:
 https://gitlab.com/edev1/trigger-fixer
 
